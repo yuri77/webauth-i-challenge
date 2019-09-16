@@ -1,6 +1,6 @@
 const db = require("../database/db-config.js");
 
-module.exports = {};
+module.exports = { find, findBy, add, findById };
 
 function find() {
   return db("users").select("id", "username", "password");
